@@ -1,0 +1,31 @@
+h1 {
+  color: rgb(204, 41, 41);
+  font-size: 22px;
+}
+#heading-number-3 {
+  color: yellow;
+  font-size: 20px;
+}
+
+.class-heading-1 {
+  color: rgb(72, 236, 108);
+  font-size: 20px;
+}
+
+/* dat tong mau chu dao cho nhieu thanh phan
+:root {
+  --text-color: green;
+}
+h1 {
+  color: var(--text-color);
+}
+
+h2 {
+  color: var(--text-color);
+}
+
+h3 {
+  color: var(--text-color);
+}
+Day la dat bien  --text-color voi mau xanh
+ */

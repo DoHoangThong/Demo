@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<!--
+    Phan phai lam dau tien khi tao ra file, khai bao html
+-->
+<html>
+    
+    <!--
+        Chu toan bo noi dung dung website
+        1 file html chi co 1 the html
+    -->
+    <head>
+            <title>
+                F8 - Shop
+                
+                <!--
+                   tieu de tim kiem cua 1 trang web 
+                   title="Day la dong chu goi y"
+                   Attribute No la thuoc tinh nam trong the mo
+                -->
+            </title>
+            <meta charset ="utf-8">
+            <!--
+                Ho tro ngon ngu tieng viet trong trang web
+            -->
+
+            <link rel="stylesheet" href="main.css">
+
+            <style>
+                
+                /* html {
+                    font-size: 100%;
+                } */
+
+                /* dat co chu chung cua website */
+
+                /* h1 {
+                    font-size: 2rem;
+                } */
+                /* rem lay thong so tu html, dat h1 = co chu bang 2 lan co chu chung cua websit */
+
+                /* vw = viewport width, vh = viewport height */
+
+            
+
+    
+                .box1    {
+                    width: 100%;
+                    height: 10vh;
+                    background-color: black;
+                    border-top: 1vh solid rgb(64, 83, 192);
+                    border-bottom: 1vh solid rgb(64, 83, 192);
+                }
+
+                .box  {
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    /* cang giua */
+                    /* align-items: center; cho van ban cang giua tren duoi  */
+                    align-items: center;
+                    justify-content: center;
+                    /* justify-content: center; cho van ban cang gia trai phai */
+                    float: left;
+                }
+
+                .box2
+                {
+                    background:rgb(64, 83, 192);
+                    padding-left: 10px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding-right: 10px;
+
+                    padding: 10px 10px 10px 10px;
+                    /* padding: 10px; la tat ca cac canh = 10
+                        padding: 10px 10px la tren duoi = 10, trai phai = 10
+                    */
+                    
+                    border: cornflowerblue;
+                    border-style: dashed;
+                    /* border-style: dashed; la border ne lien */
+                    /* border-style: solid;  la border ne dut */
+
+                    margin-right: 5px;
+                    
+                    box-sizing: border-box;
+                    /* box-sizing: border-box; giup cho tong kich thuoc cua no luon = voi kich thuoc khai bao */
+                    background-clip: content-box;
+                    /* background-clip: content-box; gioi han mau sac hien thi o khu vuc nao */
+                }
+
+                .box3 {
+                    background:rgb(174, 221, 86);
+                }
+                .box4 {
+                    background:rgb(209, 134, 63);
+                }
+                
+                .header{
+                    width: 100%;
+                    height: 100vh;
+                    background-image:
+                    url(https://pngimg.com/uploads/youtube/youtube_PNG15.png),
+                    url(https://i.pinimg.com/originals/cb/c2/2c/cbc22ca5a3d7568a742262639a9f6b3f.jpg),
+                    linear-gradient(0, rgb(168, 77, 204, 0.5), rgba(88, 90, 224, 0.5));
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    
+                    border-top: 1vh solid rgb(64, 83, 192);
+                    border-bottom: 1vh solid rgb(64, 83, 192);
+                    box-sizing: border-box;
+
+                    /* background-position: left 1px top 1px ; */
+                    /* background-origin: border-box; */
+                    
+                    
+                    /* background-repeat: contain; kich thuc anh luon luon mat dinh */
+                    /* background-repeat: cover; kich thuoc anh se to nho phu thuoc vao vao kich thuoc web */
+                    
+                    /* ko lap di lap lai hinh anh */
+                    /* background-repeat: repeat-y; lap lai anh theo truc tung
+                    background-repeat: repeat-x; lap lai anh theo truc doc */
+                    /* background-origin: border-box; dat kich thuc anh gioi han o vi tri */
+                }
+
+                .header1 {
+                    width: 100%;
+                    height: 50px;
+                    background-color: rgb(51, 11, 145);
+                    position: fixed;
+                    top: 0px;
+                    
+                }
+                
+                a::after {
+                    content: " (" attr(href) ") ";
+                }
+
+                h1:hover{
+                    color: red;
+                }
+                /* :hover là lớp giả, nó chỉ kích hoạt khi chỏ con chuột vào */
+                h1:active{
+                    color: blue;
+                }
+                /* :active là lớp giả, nó chỉ kích hoạt khi kích giữ chuột vào */
+
+                
+
+                .box5{
+                    width: 100%;
+                    height: 120px;
+                    background-color: pink;
+                    position: relative;
+
+
+                }
+                
+                .box5::before {
+                    content: "";
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    background-color: rgb(54, 197, 114);
+                }
+                /* ::before tạo thêm một element giả trong một element, dù elememt chính có nhiều element con thì element before vẫn ở trên đầu */
+                .box5::after {
+                    content: "";
+                    display: block;
+                    width: 50px;
+                    height: 50px;
+                    background-color: rgb(30, 29, 102);
+                }
+
+                h1::first-letter {
+                    font-size:  50px;
+                }
+                /* first-letter dùng để tùy chỉnh ký tự đầu tiên */
+                h1::first-line {
+                    font-size: 40px;
+                }
+                /* dùng để tùy chỉnh dòng đầu tiên */
+                h1::selection {
+                    background-color: rgb(30, 29, 102);
+                    color: seashell;
+                }
+                /* khi lựa chọn, bô đen thì nó sẽ hoạt động */
+
+
+                /* h1{
+                    position: relative;
+                    top: 100px;
+                    left: 10px;
+                } */
+                /* position: relative; giúp cho vị trí của nó không bị ràng buộc, và được đèn lên các thứ khác */
+
+                .box5-child {
+                    width: 50px;
+                    height: 50px;
+                    background-color: rgba(255, 255, 255, 0.411);
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 50px;
+                    right: 0;
+    
+                }
+                /* position: absolute; sẽ dặt vị trí phụ thuộc vào thẻ cha có position: relative; */
+
+                .IMG-logo {
+                    position: absolute;
+                }
+                .IMG-logo1 {
+                    position: absolute;
+                    
+                    
+                }
+                .Game1 {
+                    position: absolute;
+                    height: 100%;
+                    width: 80px;
+                    background-color: blueviolet;
+                    margin-left: 175px;
+                    font-size: 25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 6px 2px;
+                    box-sizing: border-box;
+                    border: brown;
+                    border-radius: 10px;
+                    background-clip: content-box;
+
+                }
+
+                .Video1 {
+                    position: absolute;
+                    height: 100%;
+                    width: 80px;
+                    background-color: rgb(212, 36, 45);
+                    margin-left: 275px;
+                    font-size: 25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 6px 2px;
+                    box-sizing: border-box;
+                    border: brown;
+                    border-radius: 10px;
+                    background-clip: content-box;
+
+                }
+
+                .Guide1 {
+                    position: absolute;
+                    height: 100%;
+                    width: 80px;
+                    background-color: rgb(36, 177, 212);
+                    margin-left: 375px;
+                    font-size: 25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 6px 2px;
+                    box-sizing: border-box;
+                    border: brown;
+                    border-radius: 10px;
+                    background-clip: content-box;
+
+                }
+                
+                .search{
+                    position: absolute;
+                    margin-left: 475px;
+                    padding: 15px 2px;
+         
+                }
+
+            </style>
+    </head>
+
+    <body>
+        <div class="header1">
+
+            <div class="IMG-logo">
+                <img height=100%; width=60px; src="https://th.bing.com/th/id/OIP.TCyHiylYR_gAnrhr8GMoSwHaF-?pid=ImgDet&rs=1" alt="anh lolo blue wolf">
+            </div>
+
+            <div class="IMG-logo1">
+                <p style="color:rgb(255, 255, 255); font-size:20px; margin-left: 75px;" >BlueWolf</p>
+            </div>
+
+            <div class="Game1">Game</div>
+            <div class="Video1">Video</div>
+            <div class="Guide1">Guide</div>
+            <div class="search" >
+                <input  type="search"> 
+            </div>
+  
+        </div>
+        <div class="header"> </div>
+       
+
+
+        <h1>
+            Tieu de - co kich co chu lon nhat
+            <br />
+            ABC
+        </h1>
+        <h1 title="Day la dong chu goi y">F8 - Shop</h1>
+        <!-- Viet tieu de co h1 den h6
+        title="Day la dong chu goi y"
+        Attribute No la thuoc tinh nam trong the mo -->
+        
+        <p>
+            Viet noi dung van ban
+        </p>
+        
+        <img height=100%; width=100%; src="https://assets.vg247.com/current/2020/10/genshin_impact_art_4.jpg" alt="anh genshin_impact_art_4">
+        <!-- hien thi anh, trong src la nguon cua anh, trong alt la mo ta buc anh -->
+        
+        <p>
+
+        </p>
+        <a href="https://assets.vg247.com/current/2020/10/genshin_impact_art_4.jpg">Link hinh anh genshin impact (https://assets.vg247.com/current/2020/10/genshin_impact_art_4.jpg")</a>
+        <!-- van ban kem theo link, trong "" la link, trong >< la van ban -->
+
+        <ul>
+            <li>Anh Barbara</li>
+            <li>Anh Chidle</li>
+            <li>Anh bla bla</li>
+            <li>Anh Diluc</li>
+        </ul>
+                <!-- The danh sach list, ul chua li, go li*4 de hien thi 4 danh muc con -->
+
+        <div>
+            <h1>CSS in HTML?</h1>
+            <p>Co 3 cach sua dung css trong html</p>
+            <ol>
+                <li>Internal</li>
+<!-- 
+                <style>
+                    h1 {
+                        color:aqua;
+                        font-size: 22px;
+                    }
+                </style>    -->
+                <!-- dat h1 co mau xanh -->
+
+                <li>External</li>
+
+                <!-- Tao ra 1 file ben ngoai, vi du nhu file main.css va bat dau sua dung css, hoac link css -->
+                <li>Inline</li>
+                <h2 style="color:aqua; font-size:16px "> Mau xanh</h2>
+
+            </ol>
+        </div>
+
+        <!-- The danh sach list, ul chua li, go li*4 de hien thi 4 danh muc con -->
+        
+        <table>
+            <thead>
+                <th>So 1</th>
+                <th>So 2</th>
+                <th>So 3</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>dong 1</td>
+                    <td>dong 1</td> 
+                </tr>
+              
+                <tr>
+                    <td>dong 2</td>
+                    <td>dong 2</td>
+                    <td>dong 2</td>  
+                </tr>
+
+            </tbody>
+        </table>
+
+        <input type="text">
+        <input type="checkbox">
+        <p></p>
+        <input type="radio">
+        <input type="radio">
+        <input type="radio">
+        <!-- cho phep chon nhieu -->
+        <p></p>
+        <input name= radio-number-1 type="radio">
+        <input name= radio-number-1 type="radio">
+        <input name= radio-number-1 type="radio">
+        <!-- Chi cho phep chon 1 -->
+
+        <button> Dang ky tai khoan </button>
+
+        <div>
+            <!-- div : bao quanh cac khoi -->
+            <h3 id= "heading-number-3"> cai dong chu nay can hien thi mau vang va co chu la 20</h3>
+            <h3 class="class-heading-1">CSS selector</h3>
+            <h3 class="class-heading-1">CSS selector</h3>
+            <h3 class="class-heading-1">ID and Class</h3>
+        </div>
+
+
+        <div class="box box2">BOX 2</div>
+        <div class="box box3">BOX 3</div>
+        <div class="box box4">BOX 4</div>
+        <!-- box, dat ca thuoc tinh chung, box2, box3 ,box4 goi cac thuoc tinh rieng -->
+        
+        <div class="box1"></div> 
+        <br />
+        <!-- <br /> dung de xuong dong -->
+        <div  class="box5">
+            <div class="box5-child">BOME</div>
+        </div>
+
+
+    
+    </body>
+    
+</html>
